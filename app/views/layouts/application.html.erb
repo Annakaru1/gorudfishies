@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Splurty</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>Splurty</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
-    <header class="row">
-      <div class="col-3">
-        <%= link_to root_path, class: 'logo' do %>
-        <div class="circle">
-          <br />
-          You know
-          <br />
-          you need
-          <br />
-          to code
-        </div>
-       <% end %>
+<body>
+  <header class="row">
+    <div class="col-3">
+      <%= link_to root_path, class: 'logo' do %>
+      <div class="circle">
+        <br />
+        You know
+        <br />
+        you need
+        <br />
+        to code
       </div>
-      <div class="col-4 slogan">
-        Splurting out unsolicited advice about entrepreneurship since 2016
-      </div>
-      <div class="col-5 links">
-        <%= link_to 'Contribute', 'new_quote_path' %>
-        <%= link_to 'About', '#' %>
-      </div>
-      
-    </header>
+      <% end %>
+    </div>
+    <div class="col-4 slogan">
+      Splurting out unsolicited advice about entrepreneurship since 2016
+    </div>
+    <div class="col-5 links">
+      <%= link_to 'Contribute', new_quote_path %>
+      <%= link_to 'About', '#' %>
+    </div>
+    
+  </header>
 
-    <hr />
+  <hr />
 
-    <br class="clear" />
+  <br class="clear" />
 
   <div class="container">
     <%= yield %>
@@ -55,5 +55,5 @@
     </div>
   </div>
 
-  </body>
+</body>
 </html>
