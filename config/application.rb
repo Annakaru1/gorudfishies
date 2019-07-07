@@ -21,5 +21,8 @@ module Splurty
 
     # Precompile additional assets
     config.assets.precompile += %w( .svg .eot .woff .ttf )
+
+    # Suggested for Heroku
+    config.assets.initialize_on_precompile = false
   end
 end
